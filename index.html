@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+    <head>
+        <title>E-Commerce Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="cart.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+
+<!-- header start here... -->
+    <header class="header-container">
+        <div class="header1">
+            <a href="#" class="logo">
+                <img src="images/zcoms logo.png" alt="error">
+            </a>
+    
+            <form action="" class="search-bar-container">
+                <input type="search" placeholder="search here..." id="search-box">
+                <label for="search-box"><button><i class="fa-solid fa-magnifying-glass"></i></button></label>
+            </form>
+    
+            <div class="header1-icons">
+                <div class="search-icon" id="search-icon">
+                    <a href="" ><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+    
+                <div class="user-icon-container">
+                    <i class="fa-solid fa-user user-icon"></i>
+                    <div class="user-popup-box">
+                        <p class="user-name">login to your account</p>
+                        <a class="user-state">login</a>
+                    </div>
+                </div>
+    
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count-num">0</span>
+                </div>
+                
+                <!-- add to cart starts here... -->
+                <div class="cart-container">
+                    <h2 class="section-heading">cart</h2>
+                    <div class="cart-box">
+                        <div class="cart-product-side">
+    
+                            <div class="cart-row">
+                                <div class="cart-product-img-container">
+                                    <img src="images/womens gym.jpeg" alt="" class="cart-product-thumb">
+                                    <i class="fa-solid fa-xmark cart-cancel-btn"></i>
+                                </div>
+                                <div class="card-product-details">
+                                    <h2 class="cart-product-name">Womens Gym</h2>
+                                    <p class="cart-product-short-des">some information about the product</p>
+                                    <span class="card-product-price">&#8377;998</span>
+                                </div>
+                                <div class="cart-product-quantity-box">
+                                    <button class="decrease-btn">-</button>
+                                    <p class="cart-quantity-num">1</p>
+                                    <button class="increase-btn">+</button>
+                                </div>
+                            </div>
+    
+                            <div class="cart-row">
+                                <div class="cart-product-img-container">
+                                    <img src="images/womens sneakers.jpeg" alt="" class="cart-product-thumb">
+                                    <i class="fa-solid fa-xmark cart-cancel-btn"></i>
+                                </div>
+                                <div class="card-product-details">
+                                    <h2 class="cart-product-name">Womens Sneakers</h2>
+                                    <p class="cart-product-short-des">some information about the product</p>
+                                    <span class="card-product-price"> &#8377; 450</span>
+                                </div>
+                                <div class="cart-product-quantity-box">
+                                    <button class="decrease-btn">-</button>
+                                    <p class="cart-quantity-num">1</p>
+                                    <button class="increase-btn">+</button>
+                                </div>
+                            </div>
+    
+                            <div class="cart-row">
+                                <div class="cart-product-img-container">
+                                    <img src="images/men tshirt.jpeg" alt="" class="cart-product-thumb">
+                                    <i class="fa-solid fa-xmark cart-cancel-btn"></i>
+                                </div>
+                                <div class="card-product-details">
+                                    <h2 class="cart-product-name">t shirt</h2>
+                                    <p class="cart-product-short-des">some information about the product</p>
+                                    <span class="card-product-price">&#8377;250</span>
+                                </div>
+                                <div class="cart-product-quantity-box">
+                                    <button class="decrease-btn">-</button>
+                                    <p class="cart-quantity-num">1</p>
+                                    <button class="increase-btn">+</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="checkout-side">
+                            <h2 class="section-heading">total bill</h2>
+                            
+                            <div class="total-amt-container">
+                                <h3 class="amt-heading">grand total :<span class="total-amount">&#8377; 00</span></h3>
+                            </div>
+                            
+                            <a href='/checkout' class="checkout-btn">proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- add to cart ends here... -->
+    
+                <a href="" class="nav-links-explorer" onclick="link_explorer()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="header2" id="header2">
+            <nav class="navbar">
+                <a href="" class="nav-links-cancel-btn"><i class="fa-solid fa-xmark"></i></a>
+                <a href="Ecom.html">Home</a>
+                <a href="#category">Category</a>
+                <a href="#product">Product</a>
+                <a href="#apparel">Apparel</a>
+                <a href="#newsletter">Newsletter</a>
+            </nav>       
+        </div>
+    </header>
+<!-- header ends here... -->
+
+<!-- slider section start here... -->
+    <section class="overall-slider">
+        <section class="slider">
+            
+            <div class="slides">
+                <input type="radio" name="radios" id="radio-1">
+                <input type="radio" name="radios" id="radio-2">
+                <input type="radio" name="radios" id="radio-3">
+                <input type="radio" name="radios" id="radio-4">
+                <input type="radio" name="radios" id="radio-5">
+
+                <div class="A-slide first-slide-img">
+                    <img src="images/slider-1.jpeg" alt="error">
+                </div>
+
+                <div class="A-slide">
+                    <img src="images/slider-2.jpg" alt="error">
+                </div>
+
+                <div class="A-slide">
+                    <img src="images/slider-3.jpeg" alt="error" >
+                </div>
+
+                <div class="A-slide">
+                    <img src="images/slider-4.jpeg" alt="error">
+                </div>
+
+                <div class="A-slide">
+                    <img src="images/slider-5.jpg" alt="error">
+                </div>
+            </div>
+
+            <div class="manual-slider-labels">
+                <label for="radio-1" class="manual-label"></label>
+                <label for="radio-2" class="manual-label"></label>
+                <label for="radio-3" class="manual-label"></label>
+                <label for="radio-4" class="manual-label"></label>
+                <label for="radio-5" class="manual-label"></label>
+            </div>
+
+        </section>
+    </section>
+<!-- slider section ends here... -->
+
+<!-- category section start here... -->
+    <section id="category" class="category-container">
+        <div class="category-boxes">
+            
+            <a href="">
+                <div class="A-category-box">
+                    <img src="images/men tshirt.jpeg" alt="error" class="category-1">
+                    <p class="category-name">mens clothes</p>
+                </div>
+            </a>
+
+            <a href="">
+               <div class="A-category-box" >
+                    <img src="images/girls cloth.jpeg" alt="error" class="category-2">
+                    <p class="category-name" style="background-color:rgb(254, 220, 237)">girls clothes</p>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="A-category-box">
+                    <img src="images/kidscloth.jpeg" alt="error" class="category-3">
+                    <p class="category-name" style="background-color:rgb(255, 255, 183)">kids clothes</p>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="A-category-box">
+                    <img src="images/mobile1.jpeg" alt="error"class="category-4">
+                    <p class="category-name" style="background-color:rgb(255, 202, 255)">mobiles</p>
+                </div>
+            </a>
+    
+            <a href="">
+                <div class="A-category-box">
+                    <img src="images/beauty.jpeg" alt="error" class="category-5">
+                    <p class="category-name" style="background-color:antiquewhite">beauty</p>
+                </div>
+            </a>
+    
+            <a href="">       
+                <div class="A-category-box">
+                    <img src="images/sneaker.jpg" alt="error" class="category-6">
+                    <p class="category-name" style="background-color:rgb(184, 249, 184)">shoes</p>
+                </div>
+            </a>
+
+    </div>
+
+    <button class="explore-category-btn" href="category.html">explore category</button>
+
+    </section>
+<!-- category section ends here... -->
+
+<!-- product slider start here... -->
+    <section id="product" class="product-container">
+
+        <h2 class="section-heading">- our best sellings -</h2>
+
+        <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="product-slider-container">
+            <div class="product-cards">
+
+                <div class="A-card" data-id="101">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/rcom8.jpg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">Mens casuals</h2>
+                        <span class="price">&#8377;500</span> <span class="actual-price">&#8377;1000</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="102">
+                    <div class="product-image">
+                        <span class="offer-tag">40% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/womens gym.jpeg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">Womens Gym</h2>
+                        <span class="price">&#8377;998</span> <span class="actual-price">&#8377;1660</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="103">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/men tshirt.jpeg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">&#8377;250</span> <span class="actual-price">&#8377;500</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="104">
+                    <div class="product-image">
+                        <span class="offer-tag">60% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/women woodie.jpg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">womens woodie</h2>
+                        <span class="price">&#8377;384</span> <span class="actual-price">&#8377;875</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="105">
+                    <div class="product-image">
+                        <span class="offer-tag">30% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/sneaker.jpg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">Mens Sneakers</h2>
+                        <span class="price">&#8377;699</span> <span class="actual-price">&#8377;549</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="104">
+                    <div class="product-image">
+                        <span class="offer-tag">30% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/womens gym.jpeg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">womens Gym</h2>
+                        <span class="price">&#8377;483</span> <span class="actual-price">&#8377;578</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+
+                <div class="A-card" data-id="106">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/shoes.jpg" alt="error" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens shoes</h2>
+                        <span class="price">&#8377;1580</span> <span class="actual-price">&#8377;3160</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button> </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- product slider ends here... -->
+
+<!-- apparels section starts here -->
+    <section id="apparel" class="apparel-section">
+        <div class="apparels">
+        <div class="apparel">
+            <a href=""><img src="images/mens apparel.jpeg" alt="sorry" class="image-1"></a>
+            <h2 class="apparel-headings">mens apparels</h2>
+        </div>
+
+        <div class="apparel">
+            <a href=""><img src="images/womens apparel.jpg" alt="sorry" class="image-2"></a>
+            <h2 class="apparel-headings">womens apparels</h2>
+        </div>
+
+        <div class="apparel">
+            <a href=""><img src="images/woodies.jpeg" alt="sorry" class="image-3"></a>
+            <h2 class="apparel-headings">woodies</h2>
+        </div>
+
+        <div class="apparel">
+            <a href=""><img src="images/formals.jpeg" alt="sorry" class="image-4"></a>
+            <h2 class="apparel-headings">Formals</h2>
+        </div>
+        </div>
+    </section>
+    <!-- apparels section ends here -->
+
+<!-- newsletter start here -->
+    <section id="newsletter" class="newsletter container">
+
+        <h2 class="section-heading">- Newsletter -</h2>
+
+        <div class="newsletter_box">
+            <h4>Subscribe to recieve our updates</h4>
+            <form>
+                <div class="subscribe_form">
+                    <input type="text" placeholder="Email here">
+                    <button>Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+ <!-- newsletter ends here -->
+
+ <!-- footer section starts here -->
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-logo"><img src="images/zcoms logo.png" alt="zcoms">
+                <div class="short-description">
+                    <p><span>zcoms</span>intent is to serve things in an affordable price to the people.</p>
+                </div>
+            </div>
+    
+            <div class="footer-links">
+                <div class="product-category">
+                    <h3>product category</h3>
+                    <a href="">men's apparels</a>
+                    <a href="">women's apparels</a>
+                    <a href="">gadgets</a>
+                    <a href="">cosmetics</a>
+                    <a href="">toys</a>
+                    <a href="">sports</a>
+                    <a href="">wearables</a>
+                    <a href="">stationaries</a>
+                </div>
+            </div>
+
+            <div class="footer-links-2">
+                <div class="information-list">
+                    <h3>informations</h3>
+                    <a href="">privacy policy</a>
+                    <a href="">refund policy</a>
+                    <a href="">shipping policy</a>
+                    <a href="">terms & conditions</a>
+                    <a href="">blog</a>
+                </div>
+            </div>
+
+            <div class="footer-links-3">
+                <h3>quick links</h3>
+                <a href="">search</a>
+                <a href="">FAQ</a>
+                <a href="">contact</a>
+                <a href=""><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href=""><i class="fa-brands fa-square-facebook"></i>facebook</a>
+                <a href=""><i class="fa-brands fa-youtube"></i>youtube</a>
+            </div>
+        </div>
+
+    <div class="footer-2">
+        <p><span>&#169</span>copyright by zcoms team.</p>
+    </div>
+    </footer>
+<!-- footer section ends here -->
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
